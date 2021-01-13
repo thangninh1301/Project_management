@@ -58,6 +58,8 @@ gem 'devise_token_auth'
 gem 'devise'
 gem 'figaro'
 gem 'rack-cors', :require => 'rack/cors'
+gem "rolify"
+gem 'cancancan', '~> 3.1.0'
 
 group :production do
 
