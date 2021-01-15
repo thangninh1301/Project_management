@@ -7,8 +7,11 @@ module Api
 
       protected
 
+      rescue_from CanCan::AccessDenied do |exception|
+      end
+
       def configure_permitted_parameters
-        devise_parameter_sanitizer.permit(:sign_in, keys: [:email, :password])
+        devise_parameter_sanitizer.permit(:sign_in, keys: %i[email password])
       end
     end
   end

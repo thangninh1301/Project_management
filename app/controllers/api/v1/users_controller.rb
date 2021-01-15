@@ -1,10 +1,12 @@
-class Api::V1::UsersController < ApplicationController
-  load_and_authorize_resource
+module Api
+  module V1
+    class UsersController < ApplicationController
+      load_and_authorize_resource
+      def show; end
 
-  def show
-  end
-
-  def index
-    @users = User.where.not(confirmed_at: nil).paginate(page: params[:page])
+      def index
+        render json: { users: @users }, status: 200
+      end
+    end
   end
 end

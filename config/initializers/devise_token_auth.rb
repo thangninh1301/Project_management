@@ -40,6 +40,7 @@ DeviseTokenAuth.setup do |config|
   config.token_lifespan = 2.days
   config.batch_request_buffer_throttle = 5.seconds
   config.default_confirm_success_url = ENV["HOST"]
+  config.default_password_reset_url = ENV["HOST"]
   # By default we will use callbacks for single omniauth.
   # It depends on fields like email, provider and uid.
   # config.default_callbacks = true

@@ -20,18 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b613b5-e42f-4bc2-b016-ed9e1c641da3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/api/v1/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/info_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/devise_token_auth.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise_token_auth.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20210113014946_devise_token_auth_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20210113014946_devise_token_auth_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/info_request_spec.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,13 +60,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c09c424c-bd06-4d40-bdb4-c4a9c57f021d" name="Default Changelist" comment="" />
+      <changelist id="e1b613b5-e42f-4bc2-b016-ed9e1c641da3" name="Default Changelist" comment="" />
       <created>1610434382744</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610434382744</updated>
       <workItem from="1610434383945" duration="9239000" />
       <workItem from="1610445563099" duration="1330000" />
+      <workItem from="1610556269717" duration="165000" />
+      <workItem from="1610680601562" duration="4656000" />
     </task>
     <servers />
   </component>
