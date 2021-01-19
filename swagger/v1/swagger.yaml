@@ -64,7 +64,7 @@ paths:
           name: body
           required: true
           schema:
-            $ref: '#/definitions/email'
+            $ref: '#/definitions/email_redirect'
       responses:
         200:
           description: ok
@@ -157,6 +157,16 @@ definitions:
       email:
         type: string
         example: "admin@admin.com"
+    xml:
+      name: email
+  email_redirect:
+    type: object
+    properties:
+      email:
+        type: string
+        example: "admin@admin.com"
+      redirect_url:
+        type: string
     xml:
       name: email
   changePass:

@@ -39,9 +39,6 @@ class DeviseTokenAuthCreateUsers < ActiveRecord::Migration[6.0]
       t.string   :last_sign_in_ip
       t.datetime :last_seen
       ## User Info
-      t.string :name
-      t.string :nickname
-      t.string :image
       t.string :email
 
       ## Tokens
