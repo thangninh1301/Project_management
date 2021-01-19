@@ -1,4 +1,3 @@
-
 # frozen_string_literal: true
 
 class User < ActiveRecord::Base
@@ -10,8 +9,8 @@ class User < ActiveRecord::Base
   include DeviseTokenAuth::Concerns::User
 
   validates :code, presence: true, uniqueness: true,
-            format: { with: /\AB[0-9]{6}\z/i,
-                      message: 'please enter code in correct format' }
+                   format: { with: /\AB[0-9]{6}\z/i,
+                             message: 'please enter code in correct format' }
 
   private
 
