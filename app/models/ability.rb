@@ -4,9 +4,5 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-    alias_action :update, :destroy, :create, :read, to: :crud
-    can :crud, User if user.has_role? :admin
-    can :read, All
-    return unless user.present?
   end
 end
