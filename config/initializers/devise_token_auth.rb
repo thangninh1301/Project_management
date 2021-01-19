@@ -35,7 +35,7 @@ DeviseTokenAuth.setup do |config|
   # Uncomment to enforce current_password param to be checked before all
   # attribute updates. Set it to :password if you want it to be checked only if
   # password is updated.
-  config.check_current_password_before_update = :attributes
+  config.check_current_password_before_update = :password
   config.change_headers_on_each_request = false
   config.token_lifespan = 2.days
   config.batch_request_buffer_throttle = 5.seconds
