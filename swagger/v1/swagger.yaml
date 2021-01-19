@@ -72,6 +72,16 @@ paths:
       tags:
         - auth
       summary: change password
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/changePass'
+      security:
+        - client: []
+          uid: []
+          access-token: []
       responses:
         200:
           description: ok
@@ -149,6 +159,20 @@ definitions:
         example: "admin@admin.com"
     xml:
       name: email
+  changePass:
+    type: object
+    properties:
+      password:
+        type: string
+        example: "12345678"
+      password_confirmation:
+        type: string
+        example: "12345678"
+      current_password:
+        type: string
+        example: "password"
+    xml:
+      name: changepass
 externalDocs:
   description: Find out more about Swagger
   url: http://swagger.io
