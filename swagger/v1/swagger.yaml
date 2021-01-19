@@ -80,19 +80,6 @@ paths:
       tags:
         - auth
       summary: logout required login
-      parameters:
-        - in: header
-          name: uid
-          type: string
-          required: true
-        - in: header
-          name: access-token
-          type: string
-          required: true
-        - in: header
-          name: client
-          type: string
-          required: true
       security:
         - client: []
           uid: []
