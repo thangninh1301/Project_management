@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
   validates :code, presence: true, uniqueness: true,
                    format: { with: /\AB[0-9]{6}\z/i,
                              message: 'please enter code in correct format' }
+  self.per_page = 10
 
   private
 

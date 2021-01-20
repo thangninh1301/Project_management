@@ -60,6 +60,7 @@ gem 'devise_token_auth'
 gem 'figaro'
 gem 'rack-cors', require: 'rack/cors'
 gem 'rolify'
+gem 'will_paginate', '~> 3.1.0'
 
 group :production do
 end
