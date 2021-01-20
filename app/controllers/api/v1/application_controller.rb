@@ -6,7 +6,7 @@ module Api
       before_action :configure_permitted_parameters, if: :devise_controller?
 
       rescue_from CanCan::AccessDenied do |exception|
-        render json: { message: exception.message,
+        render json: { errors: exception.message,
                        your_roles: current_user.roles.pluck(:name) }, status: 403
       end
 
