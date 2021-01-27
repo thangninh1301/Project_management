@@ -1,10 +1,10 @@
 module AuthSpecHelper
   def login(user)
     post api_v1_user_session_path, params: { email: user.email, password: user.password }.to_json,
-         headers: { 'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json' }
+                                   headers: { 'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json' }
   end
 
-  #auth_params_from_login_response_headers
+  # auth_params_from_login_response_headers
   def auth_params(response)
     client = response.headers['client']
     token = response.headers['access-token']
@@ -13,11 +13,11 @@ module AuthSpecHelper
     uid = response.headers['uid']
 
     {
-        'access-token' => token,
-        'client' => client,
-        'uid' => uid,
-        'expiry' => expiry,
-        'token-type' => token_type
+      'access-token' => token,
+      'client' => client,
+      'uid' => uid,
+      'expiry' => expiry,
+      'token-type' => token_type
     }
   end
 
